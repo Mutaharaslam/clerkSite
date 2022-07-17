@@ -1,0 +1,10 @@
+.banner{
+  min-height: 470px;
+  @media (min-width: 768px){
+    min-height: 578px;
+  }
+}
+
+.textSpaced{
+  letter-spacing: 9px;
+}

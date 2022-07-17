@@ -6,6 +6,8 @@ import Slider from "../../components/slider/Slider";
 import About from "../../components/about/About";
 import Features from "../../components/features/Features";
 import Announcement from "../../components/announcement/Announcement";
+import Contact from "../../components/contact/Contact";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
         <Features></Features>
         <Slider></Slider>
         <Announcement></Announcement>
+        <Contact></Contact>
+        <Footer></Footer>
       </div>
     </>
   ); 

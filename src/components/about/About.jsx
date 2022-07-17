@@ -4,7 +4,7 @@ import "./About.scss";
 
 const About = () => {
   return (
-    <section className="container mx-auto py-16 flex items-center justify-center">
+    <section className="container mx-auto py-16 px-2 flex items-center justify-center">
         <div className="w-full flex flex-col items-center justify-center">
           <h1 role="heading" className="md:text-3xl text-xl font-bold text-center text-blue mb-4">
             Welcome to theCharlotte County Clerk <br />
