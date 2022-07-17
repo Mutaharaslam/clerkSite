@@ -9,7 +9,9 @@ import yt from "./../../assets/images/yt.png";
 const Contact = () => {
 
   return (
-    <section className="contact-section container mx-auto pt-24 pb-16 px-8 flex items-center justify-center bg-blue ">
+    <section className="contact-section bg-blue relative">
+      <div className="curvedBG bg-gray-light lg:h-32 sm:h-24 h-16"></div>
+      <div className="container mx-auto pt-24 pb-16 px-8 flex items-center justify-center ">
       <div className="w-full flex flex-col items-center justify-center">
         <img className=" object-center object-cover w-24 mb-4" src={Logo} alt="" />
         <h2 className="md:text-5xl text-xl font-medium text-center font-serif text-white mb-0">
@@ -80,7 +82,9 @@ const Contact = () => {
 
 
       </div>
+    </div>
     </section>
+    
   );
 };
 

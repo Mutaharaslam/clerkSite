@@ -4,7 +4,9 @@ import sliderImg3 from "./../../assets/images/photo-1590099543482-3b3d3083a474.j
 
 const Announcement = () => {
   return (
-    <section className="announcement-section container mx-auto pt-24 md:pt-56 pb-16 px-8 flex items-center justify-center bg-gray-light ">
+    <section className="announcement-section bg-gray-light relative">
+      <div className="curvedBG bg-white lg:h-40 sm:h-24 h-16"></div>
+      <div className="container mx-auto pt-20 pb-16 px-8 flex items-center justify-center">
       <div className="w-full flex flex-col items-center justify-center">
         <span className="bg-red h-1 w-20 mb-2"></span>
         <h1 role="heading" className="md:text-5xl text-xl font-bold text-center text-blue mb-4">
@@ -58,6 +60,8 @@ const Announcement = () => {
 
 
       </div>
+      </div>
+      
     </section>
   );
 };

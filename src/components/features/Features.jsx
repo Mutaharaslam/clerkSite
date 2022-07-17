@@ -35,7 +35,8 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="feature container mx-auto py-12 bg-gray-light bg-cover bg-no-repeat w-full bg-left-bottom">
+    <div  className="feature bg-gray-light">
+      <div className="container mx-auto py-12 bg-cover bg-no-repeat w-full bg-left-bottom">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mt-10">
             <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
@@ -51,6 +52,7 @@ const Features = () => {
           </div>
         </div>
       </div>
+    </div>
   );
 };
 

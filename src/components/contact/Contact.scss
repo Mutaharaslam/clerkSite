@@ -1,10 +1,12 @@
-.banner{
-  min-height: 470px;
-  @media (min-width: 768px){
-    min-height: 578px;
-  }
+.contact-section{
+  margin-top: -40px;
+  .curvedBG{
+    width: 100%;
+    border-bottom-right-radius: 190px;
+    left: 0;
+    right: 0;
 }
-
+}
 .textSpaced{
   letter-spacing: 9px;
 }

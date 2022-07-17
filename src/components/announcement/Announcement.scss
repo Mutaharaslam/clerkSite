@@ -1,8 +1,12 @@
 .announcement-section{
-    @media (min-width: 800px){
-        margin-top: -140px;
+    .curvedBG{
+        width: 100%;
+        border-bottom-left-radius: 170px;
+        left: 0;
+        right: 0;
     }
 }
+
 
 .imageHolder{
     min-height: 300px;
