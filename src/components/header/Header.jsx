@@ -44,6 +44,26 @@ const solutions = [
     icon: RefreshIcon,
   },
 ]
+const mainMenuData = [
+  {
+    name: 'Online Services',
+    description: 'Get a better understanding of where your traffic is coming from.',
+    href: '#',
+    icon: ChartBarIcon,
+  },
+  {
+    name: 'Courts',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    href: '#',
+    icon: CursorClickIcon,
+  },
+  {
+    name: 'Departments',
+    description: "Connect with third-party tools that you're already using.",
+    href: '#',
+    icon: ViewGridIcon,
+  },
+]
 
 function classNames ( ...classes ) {
   return classes.filter( Boolean ).join( ' ' )
@@ -145,15 +165,7 @@ const Header = () => {
         </div>
       </div>
 
-      <Transition
-        
-        enter="duration-200 ease-out"
-        enterFrom="opacity-0 scale-95"
-        enterTo="opacity-100 scale-100"
-        leave="duration-100 ease-in"
-        leaveFrom="opacity-100 scale-100"
-        leaveTo="opacity-0 scale-95"
-      >
+
         <Popover.Panel focus className="absolute z-50 top-0 inset-x-0 bg-white p-2 transition transform origin-top-right md:hidden">
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">
@@ -174,7 +186,7 @@ const Header = () => {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-8">
-                  {solutions.map( ( item ) => (
+                  {mainMenuData.map( ( item ) => (
                     <a
                       key={item.name}
                       href={item.href}
@@ -190,7 +202,6 @@ const Header = () => {
 
           </div>
         </Popover.Panel>
-      </Transition>
     </Popover>
   );
 };
