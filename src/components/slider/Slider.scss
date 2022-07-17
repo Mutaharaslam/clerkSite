@@ -1,0 +1,38 @@
+.sliderSection{
+  z-index: 1;
+  @media (min-width: 800px){
+    border-bottom-left-radius: 170px;
+  }
+}
+.imageHolder{
+  max-height: 180px;
+}
+.sliderWrapper{
+  max-height: 600px;
+}
+.sliderSection{
+
+}
+
+.readMoreCTA{
+  @media (min-width: 800px){
+    opacity: 0;
+  }
+}
+
+.sliderItem{
+  transition: all 0.5s;
+  padding-bottom: 2rem;
+  @media (min-width: 800px){
+    padding-bottom: 0;
+    &:hover{
+      transition: all 0.5s;
+      padding-bottom: 2rem;
+      scale: 200;
+      .readMoreCTA{
+        opacity: 1;
+      }
+    }
+  }
+  
+}

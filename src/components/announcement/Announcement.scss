@@ -1,0 +1,22 @@
+.announcement-section{
+    @media (min-width: 800px){
+        margin-top: -140px;
+    }
+}
+
+.imageHolder{
+    min-height: 300px;
+}
+
+.readMore{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 25px;
+}
+.cornerDate{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 25px;
+}

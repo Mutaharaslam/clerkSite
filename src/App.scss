@@ -1,0 +1,161 @@
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('./assets/fonts/MyriadPro-Bold.woff2') format('woff2'),
+      url('./assets/fonts/MyriadPro-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('./assets/fonts/MyriadPro-Semibold.woff2') format('woff2'),
+      url('./assets/fonts/MyriadPro-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('./assets/fonts/MyriadSetPro-Medium.woff2') format('woff2'),
+      url('./assets/fonts/MyriadSetPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('./assets/fonts/MyriadPro-Regular.woff2') format('woff2'),
+      url('./assets/fonts/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('./assets/fonts/MyriadPro-Light.woff2') format('woff2'),
+      url('./assets/fonts/MyriadPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('./assets/fonts/MinionPro-Medium.woff2') format('woff2'),
+      url('./assets/fonts/MinionPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('./assets/fonts/MinionPro-Regular.woff2') format('woff2'),
+      url('./assets/fonts/MinionPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('./assets/fonts/MinionPro-Bold.woff2') format('woff2'),
+      url('./assets/fonts/MinionPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('./assets/fonts/MinionPro-Semibold.woff2') format('woff2'),
+      url('./assets/fonts/MinionPro-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: block;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navigationHolder .prev, .next{
+  border: 2px solid transparent;
+  background-color: red;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 45px;
+  height: 60px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  @media (max-width: 800px){
+    top : -50px;
+  }
+}
+.navigationHolder .prev{
+  left: -50px;
+  @media (max-width: 800px){
+    left: auto;
+    right: 45px;
+  }
+}
+.navigationHolder .next{
+  right: -50px;
+  @media (max-width: 800px){
+    right: 0;
+  }
+}
+.navigationHolder .prev.swiper-button-disabled, .next.swiper-button-disabled{
+  border: 2px solid #c3c2c2;
+  background-color: transparent;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #757575;
+  cursor: default;
+}
